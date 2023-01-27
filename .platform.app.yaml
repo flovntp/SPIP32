@@ -31,9 +31,9 @@ web:
     locations:
         "/":
             root: ""
-#            index:
-#                - "spip.php"
-            passthru: "/index.php"
+            index:
+                - "index.php"
+#            passthru: "/index.php"
 
 #            scripts: false
             expires: 10m
