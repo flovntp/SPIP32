@@ -20,7 +20,7 @@ web:
         "/":
             root: ""
             index:
-                - "index.php"
+                - "spip.php"
             scripts: false
             expires: 10m
 
