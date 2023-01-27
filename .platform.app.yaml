@@ -46,18 +46,18 @@ hooks:
   deploy: |
     set -x -e
 
-mounts:
-  "/local":
-    source: local
-    source_path: "local"
-  "/prive":
-    source: local
-    source_path: "prive"
-  "/ecrire":
-    source: local
-    source_path: "ecrire"
-  "/config":
-    source: local
-    source_path: "config"
+#mounts:
+#  "/local":
+#    source: local
+#    source_path: "local"
+#  "/prive":
+#    source: local
+#    source_path: "prive"
+#  "/ecrire":
+#    source: local
+#    source_path: "ecrire"
+#  "/config":
+#    source: local
+#    source_path: "config"
 
 disk: 2048
