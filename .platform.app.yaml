@@ -56,5 +56,8 @@ mounts:
   "/ecrire":
     source: local
     source_path: "ecrire"
+  "/config":
+    source: local
+    source_path: "config"
 
 disk: 2048
