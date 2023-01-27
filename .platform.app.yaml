@@ -62,5 +62,7 @@ mounts:
   "/IMG":
     source: local
     source_path: "IMG"
-
+  "/tmp":
+    source: local
+    source_path: "tmp"
 disk: 2048
