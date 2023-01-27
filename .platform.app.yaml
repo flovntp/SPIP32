@@ -14,14 +14,33 @@ resources:
     memory_ratio: 128
 
 web:
-    commands:
-        start: sleep
     locations:
         "/":
             root: ""
-            index:
-                - "spip.php"
-            scripts: false
+#            index:
+#                - "spip.php"
+            passthru: "/index.php"
+
+#            scripts: false
             expires: 10m
+
+hooks:
+  build: |
+    set -x -e
+
+    composer install
+  deploy: |
+    set -x -e
+
+mounts:
+  "/local":
+    source: local
+    source_path: "local"
+  "/prive":
+    source: local
+    source_path: "prive"
+  "/ecrire":
+    source: local
+    source_path: "ecrire"
 
 disk: 256
