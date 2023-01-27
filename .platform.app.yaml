@@ -30,7 +30,7 @@ runtime:
 web:
     locations:
         "/":
-            root: "ecrire"
+            root: ""
             index:
                 - "index.php"
 #            passthru: "/index.php"
