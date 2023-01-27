@@ -17,6 +17,16 @@ resources:
     base_memory: 64
     memory_ratio: 128
 
+runtime:
+  extensions:
+    - ctype
+    - iconv
+    - apcu
+    - mbstring
+    - sodium
+    - xsl
+    - pdo_pgsql
+
 web:
     locations:
         "/":
