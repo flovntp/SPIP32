@@ -2,6 +2,10 @@ name: app
 
 type: php:8.1
 
+dependencies:
+  php:
+    composer/composer: "^2"
+
 build:
     flavor: none
 
@@ -43,4 +47,4 @@ mounts:
     source: local
     source_path: "ecrire"
 
-disk: 256
+disk: 2048
