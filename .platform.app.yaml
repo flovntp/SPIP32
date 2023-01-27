@@ -1,6 +1,6 @@
 name: app
 
-type: php:8.2
+type: php:8.1
 
 build:
     flavor: none
@@ -18,9 +18,9 @@ web:
         start: sleep
     locations:
         "/":
-            root: "public"
+            root: ""
             index:
-                - "index.html"
+                - "index.php"
             scripts: false
             expires: 10m
 
